@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-step form interface</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <form id="signup" action="" method="">
+    <ul id="section-tabs">
+      <li class="current active"><span>1.</span> Buy</li>
+      <li><span>2.</span> Rent</li>
+      <li><span>3.</span> Investment</li>
+    </ul>
+  <div id="fieldsets">
+  <fieldset class="current">
+	<div>
+	<label class="twoPart" for="Property Price">Property Price</label>
+    <input class="twoPart" name="propertyPrice" type="number" value="4000000" data-toggle="tooltip" data-placement="right" title="Actual Property Price" trigger="hover focus click"/>
+    </div>
+	
+	
+	<div>
+		<div>
+		<label name="Loan Details" class="twoPart" for="Loan Details">Loan Details</label>
+		<input type="radio" class="tenPart" name="loanYesNo" id="loanYes" value="loanYes" onclick="enableLoanDetails();" checked>
+		<label for="Yes">Yes</label>
+		<input type="radio" class="tenPart" name="loanYesNo" value="loanNo" onclick="disableLoanDetails();">
+		<label for="No">No</label>
+		</div>
+		
+		<div class = "noLoanDetails">
+		<label class="twoPart" for="totalBuyCost">Total Property Cost</label>
+		<input class="twoPart" name="totalBuyCost" type="number" onchange="checkPropertyCost()" value="4100000" data-toggle="tooltip" data-placement="right" title="Property Price + Other Fees" trigger="hover focus click"/>
+		</div>
+		
+		<div class = "loanDetails">
+		
+		<div>
+		<label class="twoPart" for="initialBuyCost">Initial Buy Cost</label>
+		<input class="twoPart" name="initialBuyCost" type="number" value="600000" data-toggle="tooltip" data-placement="right" title="Down Payment + Other Fees" trigger="hover focus click"/>
+		</div>
+
+	
+		<label class="fourPart" for="amount">Amount</label>
+		<input class="fourPart" name="amount" type="number" value="3500000" data-toggle="tooltip" data-placement="right" title="Loan Amount" trigger="hover focus click"/>
+
+		<label class="fourPart" for="year">Loan Tenure In Years</label>
+		<input class="fourPart" name="year" type="number" value="15"/>
+
+		<label class="fourPart" for="loanRate">Annual Interest Rate</label>
+		<input class="fourPart" name="loanRate" type="number" value="8.5"/>
+
+		<label class="fourPart" for="payPerYear">Payment Per Year</label>
+		<input class="fourPart" name="payPerYear" type="number" value="12"/>
+		</div>
+		
+	</div>
+	
+  </fieldset>
+  
+  
+  <fieldset class="next">
+	<div>
+    <label class="twoPart" for="initialRentCost">Initial Cost</label>
+    <input class="twoPart" name="initialRentCost" type="number" value="10000" data-toggle="tooltip" data-placement="right" title="Initial Fees for Renting" trigger="hover focus click">
+    </div>
+	
+	<div>
+	<label class="twoPart" for="rent">Monthly Rent</label>
+    <input class="twoPart" name="rent" type="number" value="13000">
+    </div>
+	
+	<div>
+	<label class="twoPart" for="rentRate">Annual Rent Rate</label>
+    <input class="twoPart" name="rentRate" type="number" value="6" data-toggle="tooltip" data-placement="right" title="Annual % Hike in Rent" trigger="hover focus click">
+	</div>
+	
+	<div class = "noLoanDetails">
+	<label class="twoPart" for="yearToRent">No of Year To Rent</label>
+	<input class="twoPart" name="yearToRent" type="number" value="10"/>
+	</div>
+
+  </fieldset>
+  
+  
+  
+  <fieldset class="next">
+  
+  	<div>
+	<label class="twoPart" for="homeRate">Annual home value appreciation rate</label>
+    <input class="twoPart" name="homeRate" type="number" value="10">
+	</div>
+
+
+  	<div>
+	<label class="twoPart" for="investment">Investment Return</label>
+    <input class="twoPart" name="investmentRate" type="number" value="18" data-toggle="tooltip" data-placement="right" title="Expected Annual Return from other Sources" trigger="hover focus click">
+	</div>
+	
+	<div>
+	<label class="onePart" for="investment">OR</label>
+	</div>
+	
+	<div>
+	<label class="fourPart" for="investment">Choose Risk Profile</label>
+	<a class="menuBtn" class="fourPart" value="High" id="High" onclick="setRiskProfile()">High</a>
+	<a class="menuBtn" class="fourPart" value="Average" id="Average" onclick="setRiskProfile()">Average</a>
+	<a class="menuBtn" class="fourPart" value="Low" id="Low" onclick="setRiskProfile()">Low</a>
+	</div>
+	
+  </fieldset>
+  <a class="btn" id="next">Next Section ▷</a>
+
+  <a class="btn last" value="Calculate" onclick="calculate()">Calculate</a>
+  </div>
+
+  </form>
+  
+  
+
+  
+  
+
+  <script  src="js/index.js"></script>
+  
+  <div class = "result">
+	<div class = "inputSuggestionsDiv"><input class="resultMenuBtn" onclick="showInputSuggestions()" type="button" value="Help me to enter Details" id="inputSuggestionsBtn"></input></div>
+  </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7600005781686748",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+</body>
+
+</html>
