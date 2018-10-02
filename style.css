@@ -360,29 +360,37 @@ td{
 	margin: 20px;
 }
 
+.test{
+		display : none;
+	}
+
 
 /* media query */
 @media screen and (max-width: 768px) {
-.infoSection{
-  width: 100%;
-}
+	.infoSection{
+	  width: 100%;
+	}
 
-.infoNavigation{
-  width: 100%;
-}
-
-
-.result{
-  width: 100%;
-}
+	.infoNavigation{
+	  width: 100%;
+	}
 
 
-.fieldset{
-  width: 100%;
-}
+	.result{
+	  width: 100%;
+	}
 
-.signup {
-	width: 100%;
-}
+
+	.fieldset{
+	  width: 100%;
+	}
+
+	#signup {
+		width: 100%;
+	}
+	
+	.test{
+		display : block;
+	}
 
 }
