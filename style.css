@@ -18,7 +18,7 @@ body {
 }
 #signup {
   background:  url('bg3.jpg');
-  width: 600px;
+  width: 700px;
   height: auto;
   padding: 20px;
   background: #fff;
@@ -82,7 +82,7 @@ fieldset {
   border: none;
   position: absolute;
   left: -640px;
-  width: 600px;
+  width: 700px;
   padding: 10px 0;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -230,7 +230,7 @@ textarea + .valid {
 
 .result{
 	z-index: 999;
-  width: 600px;
+  width: 700px;
   height: auto;
   padding: 20px;
   margin: 50px auto;
@@ -330,4 +330,59 @@ td{
 }
 
 .loanDetails {
+}
+
+/* information css */
+.infoNavigation {
+	z-index: 999;
+  width: 700px;
+  height: auto;
+  padding: 20px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.infoSection{
+	z-index: 999;
+  width: 700px;
+  height: auto;
+  padding: 20px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.infoRef {
+	width: 100%;
+	display: inline-block;
+}
+
+.infoRefList {
+	margin: 20px;
+}
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+.infoSection{
+  width: 100%;
+}
+
+.infoNavigation{
+  width: 100%;
+}
+
+
+.result{
+  width: 100%;
+}
+
+
+.fieldset{
+  width: 100%;
+}
+
+.signup {
+	width: 100%;
+}
+
 }
