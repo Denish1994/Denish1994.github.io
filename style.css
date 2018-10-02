@@ -383,14 +383,20 @@ td{
 
 	.fieldset{
 	  width: 100%;
+	  
 	}
 
 	#signup {
 		width: 100%;
+		
 	}
 	
 	.test{
 		display : block;
+	}
+	
+	.btn {
+		background: red;
 	}
 
 }
