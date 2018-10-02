@@ -96,7 +96,7 @@ fieldset.current {
 
 }
 fieldset.next {
-  left: 640px;
+  left: 740px;
 }
 input[type=submit] {
   display: none;
@@ -410,5 +410,7 @@ td{
 	.btn {
 		background: red;
 	}
+	
+	
 
 }
