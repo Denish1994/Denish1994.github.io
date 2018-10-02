@@ -367,6 +367,10 @@ td{
 
 /* media query */
 @media screen and (max-width: 1000px) {
+	
+	.body{
+		font-size: 150%;
+	}
 	.infoSection{
 	  width: 95%;
 	}
@@ -385,14 +389,22 @@ td{
 	  width: 95%;
 	  
 	}
+	
+	#fieldsets {
+		font-size: 150%;
+	}
 
 	#signup {
 		width: 95%;
-		
+		min-height: 350px;
 	}
 	
 	.test{
 		display : block;
+	}
+	
+	.fourPart {
+		width: 22%;
 	}
 	
 	.btn {
