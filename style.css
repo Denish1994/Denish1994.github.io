@@ -368,11 +368,11 @@ td{
 /* media query */
 @media screen and (max-width: 1000px) {
 	.infoSection{
-	  width: 100%;
+	  width: 95%;
 	}
 
 	.infoNavigation{
-	  width: 100%;
+	  width: 95%;
 	}
 
 
@@ -382,12 +382,12 @@ td{
 
 
 	.fieldset{
-	  width: 100%;
+	  width: 95%;
 	  
 	}
 
 	#signup {
-		width: 100%;
+		width: 95%;
 		
 	}
 	
